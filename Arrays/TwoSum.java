@@ -1,29 +1,21 @@
 class Solution {
     public static int[] twoSum(int[] nums, int target) {
-        Arrays.sort(nums);
-        int left = 0;
-        int  right = nums.length-1;
-        while(left<right){
-            int sum=nums[left]+nums[right];
-            if(sum==target){
-                return new int[]{left , right};
-            }else if(sum<target){
-                left++;
+        HashMap<Integer , Integer>map = new HashMap<>();
+        for(int i=0; i<nums.length; i++){
+            int req_num = target - nums[i];
+            if(map.containsKey(req_num)){
+                int[] arr = {map.get(req_num) , i};
+                return arr;
             }else{
-                right--;
+                map.put(nums[i] , i);
             }
         }
-        return new int[]{};
-        
+        return null;
     }
+
     public static void main(String args[]){
         int[] nums = {2,7,11,15};
-        int target=9;
-        int[] result = twoSum(nums,target);
-        if(result.length==0){
-            System.out.println("null");
-        }else{
-            System.out.println(result[0]+" "+result[1]);
-        }
-}
+        int target = 9;
+        System.out.println(Arrays.toString(twoSum(nums , target)));
+    }
 }
