@@ -1,4 +1,4 @@
-https://leetcode.com/problems/binary-search/
+//https://leetcode.com/problems/binary-search/
 
 class binarySearch {
     public static void main(String args[]){
