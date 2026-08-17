@@ -6,6 +6,7 @@ This repository contains my DSA solutions in Java.
 
 - ⬜ Arrays
 - ⬜ Strings
+- ⬜ Math/Number
 - ⬜ Hashing
 - ⬜ Linked List
 - ⬜ Stack
