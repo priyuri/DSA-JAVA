@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/palindrome-number/description/
 public class palindrome {
 
     public static boolean isPalindrome(int x) {
