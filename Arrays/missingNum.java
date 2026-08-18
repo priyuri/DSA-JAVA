@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/missing-number/description/?utm_source=chatgpt.com
 public class missingNum {
     public static int missingNumber(int[] nums) {
         int n = nums.length;
